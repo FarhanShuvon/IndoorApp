@@ -6,6 +6,7 @@ import Signup from './screens/Signup';
 import Home from './screens/Home';
 import WelcomePage from './screens/WelcomePage'; // Updated file name
 import AddPlayground from './screens/AddPlayground'; 
+import Booking from './screens/Booking';
 
 const Stack = createStackNavigator();
 
@@ -35,6 +36,11 @@ export default function AppNavigation() {
       <Stack.Screen
         name="AddPlayground"
         component={AddPlayground}
+        options={{ headerShown: false }} // Hide header for Home Page
+      />
+      <Stack.Screen
+        name="Booking"
+        component={Booking}
         options={{ headerShown: false }} // Hide header for Home Page
       />
     </Stack.Navigator>
